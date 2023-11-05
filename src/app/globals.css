@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: #042326;
-  --background-start-rgb: #0A3A40;
-  --background-end-rgb: #0F5959;
+  --foreground-rgb: #480E23;
+  --background-start-rgb: #54020E;
+  --background-end-rgb: #873044;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +18,11 @@
 
 body {
   color: var(--foreground-rgb);
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      var(--background-end-rgb)
-    )
+  background: linear-gradient(to bottom, transparent, var(--background-end-rgb))
     var(--background-start-rgb);
+}
+
+
+.blueGreen{
+  @apply bg-gradient-to-b from-indigo-800 from-10% to-indigo-500 to-90%
 }
